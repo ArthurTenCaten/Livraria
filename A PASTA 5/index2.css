@@ -1,0 +1,29 @@
+h1 {
+    font-style: bold;
+}
+
+form {
+    font-style: bold;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
