@@ -4,12 +4,9 @@
     <title>Meu Banner Animado</title>
     <style>
         body {
-    background:lightgray;
+            background: linear-gradient(white,lightgray,darkgray,gray, black);
 }
 
-        .espanha {
-        text-align: center;
-        }
         #banner {
             width: 100%;
             height: 100px;
@@ -41,7 +38,15 @@
 	        box-sizing: border-box;
 	        border: 2px solid #000000;
 	        border-radius: 10px;
-}
+        }
+
+        h3 {
+            color: white;
+        }
+
+        #cadastroForm{
+            color: white;
+        }
 
 #aranha {
     width: 68%;
@@ -77,6 +82,7 @@
 #logo {
     width: 10%;
 }
+
 
     </style>
 </head>
@@ -121,7 +127,7 @@
             <img src="bomba.jpg" id="bomba">
         </li>
         <li>
-            <h2>Batman</h2>
+            <h2>Batman: O Cavaleiro das Trevas Resurge</h2>
             <img src="batman.jpeg" id="batman">
         </li>
         <li>
@@ -132,14 +138,41 @@
 
     <h3>Cadastro de Usuário</h3>
     <form id="cadastroForm">
-                    <label for="uername">Nome de Usuário:</label>
-                    <input type="text" id="username" required><br><br>
-    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required><br><br>
-    
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" required><br><br>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <button type="button" onclick="cadastrarusuario()">Cadastro</button><br><br>
+</form>
+
+<script>
+function cadastrarusuario(){
+var nome = document.getElementById("nome").value;
+var email = document.getElementById("email").value;
+var senha = document.getElementById("senha").value;
+
+if (nome === "" || email === "" || senha === "") {
+    document.getElementById("mensagem").innerHTML = "Por favor, preencha todos os campos.";
+    return;
+}
+
+var usuario = {
+    nome: nome,
+    email: email,
+    senha: senha
+};
+
+console.log("Usuário cadatrado: ", usuario);
+
+document.getElementById("cadastroForm").reset();
+document.getElementById("mensagem").innerHTML = "Cadastro realizado com sucesso!";
+}
+</script>
 
 </main>
 <script>
