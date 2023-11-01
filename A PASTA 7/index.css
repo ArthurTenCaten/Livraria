@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(white,lightgray,darkgray,gray, black);
+}
+
+#banner {
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    color: #ff0000;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+#mensagem {
+    position: absolute;
+    left: -200px; /* Inicialmente, a mensagem está fora da tela à esquerda */
+    white-space: nowrap;
+    font-size: 30px;
+}
+    .acao {
+    text-align: center;
+    }
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+#cadastroForm{
+    color: white;
+}
+
+#aranha {
+width: 68%;
+}
+
+#ultimato {
+width: 72%;
+}
+
+#liberdade {
+width: 62%;
+}
+
+#dungeons {
+width: 58%;
+}
+
+#batman {
+width: 65%;
+}
+ footer {
+text-align: center;
+background: url("bg.jpeg");
+padding: 40px 0;
+}
+
+.copyright {
+color: #FFFFFF;
+font-size: 13px;
+margin: 20px 0 0;
+}  
+
+#logo {
+width: 10%;
+}
